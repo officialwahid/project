@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDoApp</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Martel:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div id="content">
+        <h1><i class="fas fa-list-ul"></i>Todo App</h1>
+        <!-- Add Todo -->
+        <form id="todo-form">
+          <input
+            type="text"
+            id="todo-input"
+            placeholder="Add todo"
+          /><br /><br />
+          <input type="submit" value="Add Todo.." />
+        </form>
+        <br /><br />
+        <!-- Filter todo -->
+        <input type="text" id="filter-todos" placeholder="Filter" />
+        <!-- Display Todo -->
+        <ul id="todos"></ul>
+        <!-- Clear Todo -->
+        <button id="clear-todos">Clear Todo</button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

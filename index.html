@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My project</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Rancho&family=Saira+Extra+Condensed:wght@200&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+
+<body>
+
+  <!-- Landing Page -->
+
+  <section id="home">
+    <header>
+      <ul>
+        <li>
+          <a href="#" class="active">Home</a>
+        </li>
+        <li>
+          <a href="#skills">Skills</a>
+        </li>
+        <li>
+          <a href="#project">Project</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </header>
+    <div class="intro">
+      <h1>
+        Hi,<br />
+        I'm <span>Abdulwahid</span><br />
+        <p>Front End Developer</p>
+      </h1>
+      <h3>HTML /CSS / JavaScript</h3>
+    </div>
+
+  </section>
+
+  <!-- SKills and About -->
+
+  <section id="skills">
+    <br /><br /><br />
+
+    <!-- Skills -->
+
+    <span class="header-title">
+      Skills
+    </span>
+    <div class="container">
+      HTML
+      <div class="desc">
+        <p>The language for building web pages</p>
+      </div>
+    </div>
+    <div class="container">
+      CSS
+      <div class="desc">
+        <p>The language for styling web pages</p>
+      </div>
+    </div>
+    <div class="container">
+      JavaScript
+      <div class="desc">
+        <p>The language for programming web pages</p>
+      </div>
+    </div>
+    <div class="container">
+      Graphic Design
+      <div class="desc">
+        <p>Creating design with visual concept</p>
+      </div>
+    </div>
+
+    <!-- About -->
+
+    <div class="about">
+      <span class="header-title">
+        About
+      </span>
+      <br><br>
+      <p>
+        I love to work in User Experience and<br> 
+        User Interface designing.Because I love to<br> solve the design problem and find easy and<br> better
+        solutions to solve it.I always try my best<br> to make good user interface with
+        the best<br> user experience.<br>
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="project">
+    <br><br><br>
+    <span class="header-title portfolio">
+      Portfolio
+    </span>
+    <br><br></br>
+    <div id="project-work">
+      <div class="work">
+        Calculator
+        <div class="work-desc">
+          A web application that allows you to do arithmetic operation
+          <br /><br>
+          <a href="Calc/calc.html">View</a>
+        </div>
+      </div>
+      <div class="work">
+        LightBulb
+        <div class="work-desc">
+          Simple application Of JavaScript
+          To On/Off a LightBulb
+          <br /><br>
+          <a href="LightBulb/index.html">View</a>
+        </div>
+      </div>
+      <div class="work">
+        TodoApp
+        <div class="work-desc">
+          A web application that allows you keep track of your daily activities
+          <br /><br>
+          <a href="TodoApp/index.html">View</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+
+  <section id="contact">
+    <span class="header-title portfolio">
+      Contact Me
+    </span>
+    <br><br><br>
+    <div class="contact-content">
+      <div class="contact-form">
+        <form action="#contact">
+          <input type="text" name="Name" placeholder="Name" required>
+          <br><br>
+          <input type="email" name="Sender" placeholder="Email" required>
+          </br><br>
+          <textarea type="text" name="message" placeholder="Your message" style="height: 150px;" required></textarea>
+          <br><br>
+          <button class="form-btn" type="submit">Send</button>
+        </form>
+      </div>
+      <br>
+
+      <!-- Address -->
+
+      <div class="contact-address">
+        <b>Address:</b>
+        <address>
+          First 200 unit,<br>
+          behind kesty academy,<br>
+          lokoja,<br>
+          Kogi state. <br>
+        </address>
+        <br><br>
+        <b>Phone:</b>
+        <p>+234 8135113085</p>
+        <br><br>
+        <b>Email:</b>
+        <p>Princeabdulwahidm@gmail.com</p>
+        <p>support@mail.com</p>
+        <br><br>
+        <b>Socials:</b>
+        <p> <a href="https://wa.me/2348135113085">
+            <i class="fab fa-whatsapp" id="whatsapp"></i></a>
+        </p>
+        <p><a href="https://github.com/officialwahid">
+            <i class="fab fa-github" id="git"></i></a></p>
+        <p><a href="https://www.twitter.com/officialwahid__">
+            <i class="fab fa-twitter" id="twitter"></i></a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+
+  <br><br>
+  <footer>
+    <br />
+    ©2020 papiyo's blog,<br> All right reserved,Designed by <b>Abdulwahid</b>
+  </footer>
+
+  <!-- Scroll Effect -->
+
+  <script src="app.js"></script>
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 2000,
+      speedAsDuration: true,
+    });
+  </script>
+</body>
+
+</html>
